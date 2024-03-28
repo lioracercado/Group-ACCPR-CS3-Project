@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3 Quarterly Project - ACCPR </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Electrolize&family=Lexend+Deca:wght@100..900&family=Press+Start+2P&family=Saira:ital,wght@0,100..900;1,100..900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container">
+
+        <div class="tosscoin">
+            <h3>Toss a Coin!</h3>
+            <div class="tosscoinresult">
+                <p id="tosscoinresultoutput"></p>
+            </div>
+            <div class="dropdown">
+                <select id="choice">
+                    <option value="head">Head</option>
+                    <option value="tail">Tail</option>
+                </select>
+                <button class="tosscoinbutton" onclick="tossCoin()">Toss Coin</button>
+            </div>
+        </div>
+
+        <div class="healthbar">
+            <div id="playerhealth">Player:</div>
+            <div id="opponenthealth">Opponent:</div>
+        </div>
+
+        <div class="battle">
+            <p id="battleoutput"></p>
+
+        </div>
+
+        <div class="actionbuttons">
+            <button id="resetbutton" onclick="resetGame()" disabled>Reset</button>
+            <button id="attackbutton" onclick="playerAction('attack')" disabled>Attack</button>
+            <button id="defendbutton" onclick="playerAction('defend')" disabled>Defend</button>
+        </div>
+    
+    </div>
+</body>
+</html>
